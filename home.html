@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+  <title>3D Solar System - Home</title>
+
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <meta name="description" lang="en" content="">
+
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <meta name="keywords" lang="en" content="">
+
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially.
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+
+  <!-- To adhear no-cache for Chrome -->
+  <!--  <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-store, no-cache" />
+  <meta http-equiv="Expires" content="0" />
+ -->
+
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+
+  <link rel="stylesheet" media="screen" href="assets/css/style2.css">
+  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<style>
+	#particle {
+  background-color: #000;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0; 
+}
+#overlay {
+  position: relative;
+  color: white;
+}
+</style>
+<body>
+	<div class="container">
+    <!-- header starts -->
+    <header>  
+    </header>
+    <!-- header ends -->
+    <!-- main starts -->
+    <main>
+      <!-- solar-system starts -->
+      <div id="particle">
+        <div class="wrapper">
+          <div id="overlay">
+              <a href="sun.html"><div id="sun"></div></a>
+              <a href="mercury.html"><div id="p1"></div></a>
+              <a href="venus.html"><div id="p2"></div></a>
+              <a href="earth.html"><div id="p3"></div></a>
+              <a href="mars.html"><div id="p4"></div></a>
+              <a href="jupiter.html"><div id="p5"></div></a>
+              <a href="saturn.html"><div id="p6"></div></a>
+              <a href="uranus.html"><div id="p7"></div></a>
+              <a href="neptun.html"><div id="p8"></div></a>
+          </div>
+        </div>
+      </div>
+      <!-- solar-system ends --> 
+    </main>
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="wrapper">
+       <a href="#" title="facebook"> <i class="fa fa-facebook-official"></i></a>
+       <a href="#" title="instagram"> <i class="fa fa-instagram"></i></a>
+       <a href="#" title="snapchat"> <i class="fa fa-snapchat"></i></a>
+       <a href="#" title="pinterest"> <i class="fa fa-pinterest-p"></i></a>
+       <a href="#" title="twitter"> <i class="fa fa-twitter"></i></a>
+       <a href="#" title="linkedin"> <i class="fa fa-linkedin"></i></a>
+        <p>Powered by <a href="#">w3.css</a></p>
+      </div>
+    </footer>
+    <!-- footer ends -->
+  </div>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script>
+		var options = {
+						 "particles":{
+						 	"number":{"value":500,
+						 			  "density":{"enable":true,"value_area":552.4033491425909}
+						 			 },
+						 	  "color":{"value":"#ffffff"},
+						 	  "shape":{"type":"circle",
+						 	           "stroke":{"width":0,
+						 	                     "color":"#000000"
+						 	                    },
+						 	           "polygon":{
+						 	           	          "nb_sides":3
+						 	           	         },
+						 	           	"image":{"src":"img/github.svg",
+						 	           	          "width":70,
+						 	           	          "height":100
+						 	           	        }
+						 	           },
+						 	   "opacity":{"value":1,
+						 	              "random":true,
+						 	              "anim":{
+						 	              	      "enable":false,
+						 	              	       "speed":1,
+						 	              	       "opacity_min":0.1,
+						 	              	       "sync":false}
+						 	              },
+						 	    "size":{"value":2,
+						 	            "random":true,
+						 	             "anim":{"enable":false,
+						 	                     "speed":40,
+						 	                     "size_min":0.1,
+						 	                     "sync":false}
+						 	            },
+						 	    "line_linked":{"enable":false,
+						 	                   "distance":150,
+						 	                   "color":"#ffffff",
+						 	                   "opacity":0.4,
+						 	                   "width":1},
+						 	     "move":{"enable":true,
+						 	     	     "speed":0.4,
+						 	             "direction":"none",
+						 	             "random":true,
+						 	             "straight":false,
+						 	             "out_mode":"out",
+						 	             "bounce":false,
+						 	             "attract":{"enable":false,
+						 	                        "rotateX":600,
+						 	                        "rotateY":1200}
+						 	              }
+						 	    },
+			               "interactivity":{"detect_on":"canvas",
+			                                "events":{"onhover":{"enable":false,"mode":"repulse"},
+			                                "onclick":{"enable":true,"mode":"repulse"},"resize":true},
+			                                "modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},
+			                                "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},
+			                                "push":{"particles_nb":4},
+			                                "remove":{"particles_nb":2}}},
+			                                "retina_detect":false};
+particlesJS("particle", options);
+	</script>
+</body>
+</html>

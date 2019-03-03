@@ -1,0 +1,40 @@
+  
+#p8{
+ background-image: url('../../image/p8.jpg');
+  width: 60;
+  height: 60;
+  z-index:-8;
+  background-size: 190px;
+ margin:-70px 940px auto;
+  border-radius: 50%;
+  position: relative;
+  animation-name: movep8,scalep8,rotatep8;
+  animation-duration:45s,45s,45s;
+  animation-iteration-count: infinite,infinite,infinite;
+  animation-timing-function:ease-in-out,linear,linear;
+}
+@keyframes movep8 {
+  0%   { left: 860px; box-shadow: inset 16px 0 40px 3px rgba(0,0,0,0.9),
+   inset -3px 0 5px 2px rgba(255,255,255,0.16);}  
+  50%  { left: -860px; box-shadow: inset 16px 0 40px 3px rgba(115, 171, 232,0.1),
+   inset -3px 0 5px 2px rgba(255,255,255,0.16);}
+ 100% { left: 860px;z-index:10; box-shadow: inset 16px 0 40px 3px rgba(0, 0, 0,0.9),
+   inset -3px 0 5px 2px rgba(255,255,255,0.16);}
+} 
+#p8:hover{
+animation-play-state: paused,paused,paused;
+}
+
+@keyframes scalep8 {
+  0%  { transform: scale(1);   }
+  32% { transform: scale(0.4); animation-timing-function:  ease-in; }
+  70% { transform: scale(1); animation-timing-function:  ease-in;  }
+  75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
+  86% { transform: scale(1.4);  }  
+  98% { transform: scale(1.2); }
+  100%{ transform: scale(1); }
+}
+@keyframes rotatep8 {
+  0% { background-position: 0px; }
+  100% { background-position: 190px; }
+} 
